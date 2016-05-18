@@ -1,0 +1,20 @@
+#ifndef REACTOR_COMMON_TYPE_INTEGERS_HPP
+#define REACTOR_COMMON_TYPE_INTEGERS_HPP
+
+namespace reactor { namespace common { namespace type {
+
+using uint8 = unsigned char;
+using uint16 = unsigned short;
+using uint32 = unsigned int;
+using uint64 = unsigned long long;
+
+using int8 = signed char;
+using int16 = short;
+using int32 = int;
+using int64 = long long;
+
+using byte = uint8;
+
+}}} // namespace reactor::common::type
+
+#endif // REACTOR_COMMON_TYPE_INTEGERS_HPP
