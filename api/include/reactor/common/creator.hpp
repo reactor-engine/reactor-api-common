@@ -19,7 +19,7 @@
 impType ptr##_imp_tmp_{__VA_ARGS__};\
 ptrType ptr = &ptr##_imp_tmp_
 
-#define INNER_CREATE_PTR_DYNAMIC(ptrType, implType, ptr, ...) ptrType ptr = new impType(__VA_ARGS__)
+#define INNER_CREATE_PTR_DYNAMIC(ptrType, implType, ptr, ...) ptrType ptr = new implType(__VA_ARGS__)
 
 #define INNER_CREATE_PTR_DYNAMIC_SHARED(ptrType, implType, ptr, ...) \
 auto ptr##_tmp_ = std::make_shared<implType>(__VA_ARGS__);\
